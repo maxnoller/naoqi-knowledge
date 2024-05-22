@@ -10,9 +10,10 @@ If you have any questions regarding working with the robots in python, suggestio
 ## SDKs
 ### QI or NaoQI? Can I use python 3 to work with Aldebaran robots?
 A lot of sources on the Internet claim you need to use python2.7 to work with Nao and while this might have been true in the past, at some point Aldebaran has blessed us with an updated SDK for python.
-#### NaoQI
+- NaoQI
 This is the older sdk used in most of the tutorials/resources online. It requires python 2.7 and cannot be installed from pip as far as I am aware. You should not use this anymore, I dont think they are still updating it, python2.7 is ancient and should not be used under any circumstances and it is in general just a pain to work with.
-#### QI
+- QI
 Newer SDK which supports python3, is still being updated (sometimes) and is just in general a way better experience to work with.
+*IMPORTANT*: The pypi version is only available for linux, as far as I know Aldebaran does not provide a Windows version of QI. To work with QI in windows use [WSL](https://learn.microsoft.com/en-us/windows/wsl/install). I am not sure but you could maybe compile qi yourself for windows. If I try this some day I will post a guide in here. If anyone else does this please let me know.
 You can install QI using pip (or similar package managers like poetry): `pip install qi`
 
